@@ -6,6 +6,17 @@
 
 #### **쿼리 메서드**
 
+```java
+public interface UserRepository extends Repository<User, Long> {
+
+	List<User> findByEmailAddressAndLastname(String emailAddress, String lastname);
+}
+```
+
+위와 같이 인터페이스에 먼저 사용자 쿼리 메서드를 정의해준 다음 인터페이스를 구현하는 서비스에서 구체적인 비즈니스 로직을 추가해 내용을 구현해 줄 수 있다. 쿼리 메소드는 where 절에 들어가는 조건과 관련한 것을 메소드로 지원
+
+
+
 메소드이름을 분석해서 JPQL 쿼리를 생성하여 실행해주는 기능 ( 특정 키워드와 형식을 맞춰서 우리가 원하는 필드에 대한 쿼리를 스프링데이터 JPA가 대신 생성 )
 
 - Entity의 필드명이 변경되면 인터페이스에 정의한 메서드 이름도 꼭 함께 변경해야 함
