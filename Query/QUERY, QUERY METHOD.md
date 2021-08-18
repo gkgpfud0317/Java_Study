@@ -54,7 +54,7 @@ public interface UserRepository extends Repository<User, Long> {
 
 **쿼리 메서드의 기능**
 
-- 메소등 이름으로 쿼리 생성
+- 메소드 이름으로 쿼리 생성
 - 메소드 이름으로 JPA NamedQuery 호출
 - @Query 어노테이션을 통해 Repository 인터페이스에 쿼리 직접 정의
 
