@@ -1,6 +1,6 @@
 # JWT 
 
-**JWT(JWT  Web Token)**
+**JWT(Json  Web Token)**
 
 - JSON 포맷을 이용한 Web Token
 - 두 개체에서 JSON 객체를 이용해 Self-contained 방식으로 정보를 안전하게 전달
