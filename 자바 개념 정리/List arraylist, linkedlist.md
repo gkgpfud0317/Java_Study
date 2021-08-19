@@ -124,4 +124,4 @@ int newCapacity = oldCapacity + (oldCapacity >> 1);
 | ArrayList  | 빠르다          | 느리다      | 순차적인 추가삭제는 더                                           빠름비효율적인 메모리 사용 |
 | LinkedList | 느리다          | 빠르다      | 데이터가 많을 수록 접근성이 떨어짐                           |
 
-> 다르고자 하는 데이터의 개수가 변하지 않는 경우라면, ArrayList가 최상의 선택이겠지만, 데이터 개수의 변경이 잦다면 LinkedList를 사용하는 것이 더 나은 선택이 될 것
+> 다루고자 하는 데이터의 개수가 변하지 않는 경우라면, ArrayList가 최상의 선택이겠지만, 데이터 개수의 변경이 잦다면 LinkedList를 사용하는 것이 더 나은 선택이 될 것
